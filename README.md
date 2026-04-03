@@ -34,6 +34,8 @@ Exit codes:
 
 ## Run Example
 
+> Sample: https://github.com/anthropics/claude-code/tree/main/plugins
+
 Basic validation
 
 ```bash
