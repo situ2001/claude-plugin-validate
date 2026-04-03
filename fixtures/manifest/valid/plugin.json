@@ -1,0 +1,40 @@
+{
+  "name": "demo-plugin",
+  "version": "1.0.0",
+  "description": "demo",
+  "commands": {
+    "about": {
+      "source": "./commands/about.md"
+    }
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo hello"
+          }
+        ]
+      }
+    ]
+  },
+  "lspServers": {
+    "ts": {
+      "command": "typescript-language-server",
+      "args": ["--stdio"],
+      "extensionToLanguage": {
+        ".ts": "typescript"
+      }
+    }
+  },
+  "userConfig": {
+    "TOKEN": {
+      "type": "string",
+      "title": "Token",
+      "description": "API token",
+      "required": true,
+      "sensitive": true
+    }
+  }
+}

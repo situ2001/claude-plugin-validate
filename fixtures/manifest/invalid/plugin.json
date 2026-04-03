@@ -1,0 +1,35 @@
+{
+  "name": "bad plugin",
+  "commands": {
+    "bad": {
+      "source": "commands/no-dot-slash.md",
+      "content": "# conflict"
+    }
+  },
+  "hooks": {
+    "NotARealHookEvent": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo bad"
+          }
+        ]
+      }
+    ]
+  },
+  "lspServers": {
+    "ts": {
+      "command": "typescript-language-server --stdio",
+      "extensionToLanguage": {
+        "ts": "typescript"
+      }
+    }
+  },
+  "channels": [
+    {
+      "server": "",
+      "unknownField": true
+    }
+  ]
+}
