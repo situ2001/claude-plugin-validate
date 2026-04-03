@@ -1,6 +1,8 @@
 # claude-plugin-validate
 
-> Deferring plugin validation until **RUNTIME** is painful, especially in **TEAM DEVELOPMENT**: teammates can hit errors during **INSTALLATION**, which increases **ADOPTION FRICTION**, and malformed plugin content may be silently ignored. So why not **SHIFT VALIDATION LEFT** and catch these issues before release?
+Deferring plugin validation until **RUNTIME** is painful, especially in **TEAM DEVELOPMENT**: teammates can hit errors during **INSTALLATION**, which increases **ADOPTION FRICTION**, and malformed plugin content may be silently ignored. So why not **SHIFT VALIDATION LEFT** and catch these issues before release?
+
+---
 
 This tool validates Claude Code plugin manifest schema (`plugin.json`) and
 plugin content schemas (markdown frontmatter and `hooks/hooks.json` structure).
